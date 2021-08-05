@@ -1,9 +1,9 @@
 class Monk < Formula
   desc "Monk is the stack orchestration platform. K8s alternative."
   homepage "https://monk.io"
-  url "https://get.monk.io/stable/macos/monk-darwin-v3.1.7.tar.gz"
-  sha256 "744a2364fbf07106a8603a481d106726f9dc7127a8b82080ac7a0c6c46cb9665"
-  version "3.1.7"
+  url "https://get.monk.io/stable/macos/monk-darwin-v3.1.8.tar.gz"
+  sha256 "1266d272eeb23fef36fbf6e296c6b7ae76248cfc1dc81a72672f6d471571cc9d"
+  version "3.1.8"
 
   bottle :unneeded
 
