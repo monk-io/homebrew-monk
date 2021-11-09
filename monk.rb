@@ -5,13 +5,10 @@ class Monk < Formula
   sha256 "c41daedb3773f37512dbf8bdcb1beebd9265a763e2059395bea3934c7f0fc0c2"
   version "3.2.1"
 
-  bottle :unneeded
-
   def install
     bin.install "monk" => "monk"
     bin.install "monkd" => "monkd"
   end
-
 
   plist_options manual: "monkd"
 

@@ -5,13 +5,10 @@ class Monk < Formula
   sha256 "_BREW_SHA256"
   version "_BREW_VERSION"
 
-  bottle :unneeded
-
   def install
     bin.install "monk" => "monk"
     bin.install "monkd" => "monkd"
   end
-
 
   plist_options manual: "monkd"
 
