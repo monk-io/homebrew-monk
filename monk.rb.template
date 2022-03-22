@@ -3,10 +3,10 @@ class Monk < Formula
   homepage "https://monk.io"
   version "_BREW_VERSION"
 
-  url_x64 "_BREW_URL"
-  sha256_x64 "_BREW_SHA256"
-  url_arm64 "_BREW_ARM_URL"
-  sha256_arm64 "_BREW_ARM_SHA256"
+  url_x64 = "_BREW_URL"
+  sha256_x64 = "_BREW_SHA256"
+  url_arm64 = "_BREW_ARM_URL"
+  sha256_arm64 = "_BREW_ARM_SHA256"
 
   if Hardware::CPU.intel?
     sha256 sha256_x64
