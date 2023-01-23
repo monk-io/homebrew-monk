@@ -1,12 +1,12 @@
 class Monk < Formula
   desc "Monk is the stack orchestration platform. K8s alternative."
   homepage "https://monk.io"
-  version "3.8.0"
+  version "3.8.1"
 
-  url_x64 = "https://get.monk.io/stable/macos/monk-darwin-v3.8.0.tar.gz"
-  sha256_x64 = "95eb935b658d8c38a555c0cb1bf8eab6ebc9fa3938e4c31e20437d6d1ccbda0e"
-  url_arm64 = "https://get.monk.io/stable/macos/monk-arm-darwin-v3.8.0.tar.gz"
-  sha256_arm64 = "6bc074a90004d8ecd9189b08fa9e8db58b5013f54551ecd5d2a62c9525ee2fc6"
+  url_x64 = "https://get.monk.io/stable/macos/monk-darwin-v3.8.1.tar.gz"
+  sha256_x64 = "169369505060daa9bf183cbb9359e897da726520334fc6e386df3200d63bdc5a"
+  url_arm64 = "https://get.monk.io/stable/macos/monk-arm-darwin-v3.8.1.tar.gz"
+  sha256_arm64 = "16030b9716d3b33fbf518361c142923019c95d4653154996851dfd9625a2bc7d"
 
   if Hardware::CPU.intel?
     sha256 sha256_x64
