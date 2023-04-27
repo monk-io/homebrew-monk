@@ -16,15 +16,11 @@ class Monk < Formula
     url url_arm64
   end
 
-#  depends_on "podman" => :recommended
+  depends_on "podman" => :recommended
 
   def install
     bin.install "monk" => "monk"
     bin.install "monkd" => "monkd"
-  end
-
-  def post_install
-    (var/"log/monk").mkpath
   end
 
   def caveats; <<~EOS
@@ -35,11 +31,4 @@ class Monk < Formula
       monk machine upgrade
     EOS
   end
-
-#  service do
-#    run ["#{bin}/monkd"]
-#    working_dir HOMEBREW_PREFIX
-#    log_path var/"log/monk/output.log"
-#    error_log_path var/"log/monk/error.log"
-#  end
 end
