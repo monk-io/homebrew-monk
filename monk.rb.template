@@ -16,38 +16,19 @@ class Monk < Formula
     url url_arm64
   end
 
+  depends_on "podman" => :recommended
+
   def install
     bin.install "monk" => "monk"
     bin.install "monkd" => "monkd"
   end
 
-  plist_options manual: "monkd"
+  def caveats; <<~EOS
+    Initialize the monk machine with monk daemon inside
+      monk machine init
 
-  def plist
-    <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-        <dict>
-          <key>Label</key>
-          <string>#{plist_name}</string>
-          <key>RunAtLoad</key>
-          <true/>
-          <key>EnableGlobbing</key>
-          <true/>
-          <key>ProgramArguments</key>
-          <array>
-            <string>/usr/local/bin/monkd</string>
-          </array>
-          <key>StandardErrorPath</key>
-          <string>/tmp/com.monkd.daemon.plist.error.log</string>
-          <key>StandardOutPath</key>
-          <string>/tmp/com.monkd.daemon.plist.log</string>
-          <key>UserName</key>
-          <string>{{USERNAME}}</string>
-        </dict>
-      </plist>
+    Upgrade monk daemon inside the machine machine to the latest version
+      monk machine upgrade
     EOS
   end
-
 end
