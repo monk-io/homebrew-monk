@@ -27,7 +27,7 @@ class Monk < Formula
     Initialize the monk machine with monk daemon inside
       monk machine init
 
-    Upgrade monk daemon inside the machine machine to the latest version
+    Upgrade monk daemon inside the monk machine to the latest version
       monk machine upgrade
     EOS
   end
