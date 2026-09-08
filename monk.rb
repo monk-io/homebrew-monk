@@ -4,9 +4,9 @@ class Monk < Formula
   version "3.21.4"
 
   url_x64 = "https://get.monk.io/stable/macos/monk-darwin-v3.21.4.tar.gz"
-  sha256_x64 = "f4366506618fa07923fe2dec3aeda003f74931f99f7a9222648996646badce3a"
+  sha256_x64 = "476ed0271fd45c49e5a9772f8beeeb63c5b7a5762bf18a03cf577592bee80f4b"
   url_arm64 = "https://get.monk.io/stable/macos/monk-arm-darwin-v3.21.4.tar.gz"
-  sha256_arm64 = "9bc28d654e4a2062772ce8cab5dc6fdea91ca5288af8faf94360191a89897c69"
+  sha256_arm64 = "738deb9c1e6d9be42ea1a144c1eb14d73b5ab5cdd27dfeb2986857374d8b3126"
 
   if Hardware::CPU.intel?
     sha256 sha256_x64
