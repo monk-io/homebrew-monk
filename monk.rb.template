@@ -21,6 +21,7 @@ class Monk < Formula
   def install
     bin.install "monk" => "monk"
     bin.install "monkd" => "monkd"
+    generate_completions_from_executable(bin/"monk", "completion")
   end
 
   def caveats; <<~EOS
